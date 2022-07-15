@@ -1,0 +1,15 @@
+$.ajax({
+	url:"https://api.iamport.kr/users/getToken",
+	type:"post",
+	dataType:"json",
+              data :{
+  imp_key: "imp_apikey", 
+      imp_secret: "ekKoeW8RyKuT0zgaZsUtXXTLQ4AhPFW3ZGseDA6bkA5lamv9OqDMnxyeB9wqOsuO9W3Mx9YSJ4dTqJ3f" 
+	},
+	success:function(data){
+		alert(data.response.access_token);
+	},
+	erro:function(e){
+	alert(e);
+	}
+});
